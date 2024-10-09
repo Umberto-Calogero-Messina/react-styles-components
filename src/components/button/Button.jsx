@@ -1,5 +1,8 @@
-// const Button = ({ children }) => {
-//   return <button>{children}</button>;
-// };
+import { StyledButton } from "./button.styles";
 
-// export default Button;
+
+const Button = ({ children, color, padding, rounded, hover }) => {
+  return <StyledButton $color={color} $padding={padding} $rounded={rounded} $hover={hover} >{children}</StyledButton>;
+};
+
+export default Button;
